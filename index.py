@@ -1,50 +1,18 @@
-a = "毎日ITを勉強してる頑張りましょう"
-b = "でも難しいですが家族から"
-c =  "毎週８０時間ITと日本語と英語勉強します"
+my_list = ["日本語", "英語", "明日"]
 
+print(my_list[0])
+print(my_list[1])
+print(my_list[2])
 
-print(a + b + c)
+fruits = ["apple", "banana", "cherry"]
+fruits[1] = "yushing"
 
+print(fruits)
 
-my_string = " This is a sample string in my class room"
-my_list = my_string.split()
-print(my_list)
+English = ["English", "Japanese", "Spans"]
+English.append("Chinese")
+print(English)
 
-
-my_string = "apple,banana,orange,grape"
-my_list = my_string.split(",")
-print(my_list)
-
-a = "I am  learning English width my friend end my family"
-b = a.split(' ', 2)
-
-print(a)
-print(b)
-
-c = "how kteam free education "
-d = c.rpartition("kteam")
-print(c)
-print(d)
-
-e = "how kteam education interface on spacebetween and my wife"
-f = e.startswith('h')
-print(f)
-
-g = "Hello world"
-h = g.find("w")
-print(h)
-
-#isdigit() giúp kiểm tra xem thằng này có phải là số không
-a = "5a" 
-b = a.isdigit()
-print(a)
-print(b) 
-
-print("=======")
-
-#isspace: Kiểm tra xem có khoảng trắng không
-a = '  '
-b = a.isspace()
-print(b)
-
-
+CourseIt = ["Iphone", "Mac", "Interface", "Yushing"]
+CourseIt.reverse()
+print(CourseIt)

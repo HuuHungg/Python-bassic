@@ -61,4 +61,52 @@ print(r)
 print(t)
 
 
+# Hàm count đếm xem số lần xuất hiện của 1 phần tử là bao nhiêu lần 
+a = [1,1,2,2,2,3,4,5,6,7]
+c = a.count(1) 
+print(c)
 
+money = [60]
+money_all = money
+
+print(money)
+print(money_all)
+
+print ("======")
+
+money_all.clear()
+
+print(money)
+print(money_all)
+
+a = [1,2,3,4,5]
+a.append([6,7])
+print(a)
+
+a.extend([6,7])
+print(a)
+
+#insert (Thêm phần tử, vào vị trí) 
+a = [1,2,3]
+print(a)
+a.insert(4,4)
+print(a)
+
+print("=====")
+
+#Pop Lấy ra phần tử và trả về phần tử đã lấy
+a = [10,11,12]
+c = a.pop(2)
+
+print(a)
+print(c)
+
+n = [1,2,8,9,4,5]
+n.remove(2)
+print(n)
+n.reverse() # Đảo ngược lại
+print(n)
+
+# sort sắp xếp từ bé đến lớn và đảo ngược theo key
+n.sort()
+print(n)

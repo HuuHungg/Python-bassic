@@ -1,41 +1,18 @@
-dic =  {'name': 'Kteam', 'member': 69}
-print(dic)
-print(type(dic))
+file_object = open('Yushing.txt')
+data = file_object.read()
+file_object.close()
+file_object = open('Yushing.txt')
+data2 = file_object.read()
+print(data)
+print(" ===== ")
+print(data2)
 
-dic = {key: value for key, value in [('name', 'kteam'), ('member', 69)]}
-print(dic)
-print(type(dic))
-
-iter_ = [('name', 'Yushing'), ('member', 21)]
-dic = dict(iter_)
-print(dic)
-print(type(dic))
+# Phương thức readline là đọc từng dòng
+data = file_object.readline()
+data2 = file_object.readline()
+file_object.close()
+print(data)
+print(data2)
 
 
-dic = dict(name = 'Kteam', member = 69, FE = "Free education")
-print(dic)
-print(type(dic))
 
-iter_ = ('name', 'number','age', 70, True)
-dict = dict.fromkeys(iter_, "Yushing ")
-
-dict['name'] = 'ぐえんフフン'
-print(dict['name'])
-
-# khi thêm một cặp key và value
-dict ['addRed'] = 'Free Education'
-print(dict)
-
-print("=====")
-
-dic = dict(K = 60, HK = "Yushing", AGE = 80)
-print(dic)
-
-dic['K'] = dic['K'] + 1
-print(dic)
-
-dic = dict(K = 'Kteam', HK = "HowKTeam", FE = 'Free education')
-print(dic)
-
-dic['K'] = dic['K'] + ": I am leaning English with my friend"
-print(dic)

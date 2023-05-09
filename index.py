@@ -1,23 +1,36 @@
-itera = (x for x in range(3))
-print(itera)
-print(sum(itera,2))
-print(max (9,5,25,6))
-print(max([], default = "Yushing"))
+# Sep: Chia ra, phân ra, trong Python 
 
-itera2 = [1,2,7,9,6,4,3]
-print(itera2)
-print(sorted(itera2))
-print(sorted(itera2, reverse=True))
+print('Yushing', 'Python', 'Interface', 'Golang')
+print('Yushing', 'Python', 'Interface', 'Golang', sep='|||')
 
-numbers = [1,2,3,4,5]
-i = 0
-while i < len(numbers):
-    print(numbers[i])
-    i += 1
 
-string = 'Hello, world in the Python'
+# end Kết thúc 
+print('a line without newline', end = '|||')
 
-for char in string:
-    print(char)
+from time import sleep # nhập hàm sleep từ thư viện time vào
+print("====")
+print('start....')
+sleep(1)
+print('end....')
 
-print(123, [4,5,6], 'Kteam')
+#flush xuất ra những gì có trong bộ nhớ đệm 
+
+print('line 1\n', 'line2', end= '', flush=True)
+sleep(3)
+print('end...')
+
+
+# Tạo ra file
+with open ('printtext.txt', 'w') as f:
+     print('Yushing learn English and IT with my frend and my family', file=f)
+     print('毎日ITを勉強してる頑張りましょう', file=f)
+
+
+your_name = "Yushing"
+your_great = "Hello, My name is "
+
+for c in your_great + your_name:
+    print(c, end = '', flush=True)
+    sleep(0.1)
+print()
+

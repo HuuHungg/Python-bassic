@@ -34,3 +34,4 @@ for c in your_great + your_name:
     sleep(0.1)
 print()
 
+print('毎日二時間ぐらいITを勉強してる頑張りましょう')

@@ -1,50 +1,56 @@
-a = "毎日ITを勉強してる頑張りましょう"
-b = "でも難しいですが家族から"
-c =  "毎週８０時間ITと日本語と英語勉強します"
+age = 18 
+if age >= 18:
+    print("You can drive motobike")
+else: 
+    print("You can't drive motobike")
+
+num =  int(input("Nhập số nguyên: "))
+
+if num > 0:
+    print("Số này là số dương")
+elif num == 0:
+    print('Số này là số không')
+else:
+    print('Số này là số âm' )
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+for num in numbers:
+    if num % 2 == 0:
+        print(num, "Even number")
+    else:
+        print(num, "odd")
 
 
-print(a + b + c)
+a = 0
+b = 0
+if a - 1 < 0:
+    print('a smaller than 1')
+    if b - 1 < 0:
+        print('b bigger than 1')
+
+# Cả khối trên là một blog của if 
 
 
-my_string = " This is a sample string in my class room"
-my_list = my_string.split()
-print(my_list)
+a = 3
+if  a - 1 < 0: # False, tiếp tục    
+    print('a is less than 1')
+elif a - 2 < 0:
+    print('a is less than 2')
+elif a - 3 < 0:
+    print('a is less than 3')
+elif a - 4 < 0:
+    print('a is less than 4')
+elif a - 5 < 0:
+    print('a is less than 5')
+else:
+    print("I don't know")
 
 
-my_string = "apple,banana,orange,grape"
-my_list = my_string.split(",")
-print(my_list)
-
-a = "I am  learning English width my friend end my family"
-b = a.split(' ', 2)
-
-print(a)
-print(b)
-
-c = "how kteam free education "
-d = c.rpartition("kteam")
-print(c)
-print(d)
-
-e = "how kteam education interface on spacebetween and my wife"
-f = e.startswith('h')
-print(f)
-
-g = "Hello world"
-h = g.find("w")
-print(h)
-
-#isdigit() giúp kiểm tra xem thằng này có phải là số không
-a = "5a" 
-b = a.isdigit()
-print(a)
-print(b) 
-
-print("=======")
-
-#isspace: Kiểm tra xem có khoảng trắng không
-a = '  '
-b = a.isspace()
-print(b)
+b = 4
+if b - 1 < 0:
+    print('b is less than 1')
+else: 
+    print('a is less than 5')
 
 

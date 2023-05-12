@@ -1,37 +1,56 @@
-# Sep: Chia ra, phân ra, trong Python 
+age = 18 
+if age >= 18:
+    print("You can drive motobike")
+else: 
+    print("You can't drive motobike")
 
-print('Yushing', 'Python', 'Interface', 'Golang')
-print('Yushing', 'Python', 'Interface', 'Golang', sep='|||')
+num =  int(input("Nhập số nguyên: "))
 
+if num > 0:
+    print("Số này là số dương")
+elif num == 0:
+    print('Số này là số không')
+else:
+    print('Số này là số âm' )
 
-# end Kết thúc 
-print('a line without newline', end = '|||')
+numbers = [1,2,3,4,5,6,7,8,9,10]
 
-from time import sleep # nhập hàm sleep từ thư viện time vào
-print("====")
-print('start....')
-sleep(1)
-print('end....')
-
-#flush xuất ra những gì có trong bộ nhớ đệm 
-
-print('line 1\n', 'line2', end= '', flush=True)
-sleep(3)
-print('end...')
-
-
-# Tạo ra file
-with open ('printtext.txt', 'w') as f:
-     print('Yushing learn English and IT with my frend and my family', file=f)
-     print('毎日ITを勉強してる頑張りましょう', file=f)
+for num in numbers:
+    if num % 2 == 0:
+        print(num, "Even number")
+    else:
+        print(num, "odd")
 
 
-your_name = "Yushing"
-your_great = "Hello, My name is "
+a = 0
+b = 0
+if a - 1 < 0:
+    print('a smaller than 1')
+    if b - 1 < 0:
+        print('b bigger than 1')
 
-for c in your_great + your_name:
-    print(c, end = '', flush=True)
-    sleep(0.1)
-print()
+# Cả khối trên là một blog của if 
 
-print('毎日二時間ぐらいITを勉強してる頑張りましょう')
+
+a = 3
+if  a - 1 < 0: # False, tiếp tục    
+    print('a is less than 1')
+elif a - 2 < 0:
+    print('a is less than 2')
+elif a - 3 < 0:
+    print('a is less than 3')
+elif a - 4 < 0:
+    print('a is less than 4')
+elif a - 5 < 0:
+    print('a is less than 5')
+else:
+    print("I don't know")
+
+
+b = 4
+if b - 1 < 0:
+    print('b is less than 1')
+else: 
+    print('a is less than 5')
+
+

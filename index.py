@@ -1,53 +1,37 @@
-# while
-k = 0
-while k < 5:
-    print("I am coding run", k)
-    k += 1
+def sum(a,b):
+    result = a + b
+    return result
+print(sum(2,3))
 
 
-s = "Yushing"
-idx = 0
-length = len(s)
+def yushing(a,b):
+    print("毎日ITを勉強してる頑張りましょう")
+    return a + b
 
-while idx < length :
-    print(idx,"start for code run", s[idx])
-    idx += 1
+print(yushing("でもITが難しいですが", "頑張ってください"))
 
-print("=====")
+def kteam(text,age):
+    print(text)
+    print(age)
 
-# Break
-
-five_even_numbers = []
-k_number = 1
-
-
-five_number = []
-y_number = 1
-
-while True:
-    if y_number % 2 == 0:
-        five_number.append(y_number)
-        if len(five_number) >= 5:
-            break
-    y_number += 1
-
-print(five_number)
-print(y_number)
+kteam(" Hello Kteam !", 69)
+kteam("毎日ITを勉強してるでもに日本語勉強した午後を食べました", 60)
+kteam("頭が痛いですら", 45) 
 
 
-k_number = 0
-while k_number < 10:
-    k_number += 1
-    if k_number % 2 == 0:
-        continue
-    print('K is number odd', k_number)
+def yushing2(age, name="yushing"):
+    print(age)
+    print(name)
+yushing2(21)
+yushing2(60, "yushing2")
 
 
-k = 0
-while k < 5:
-    print('Value key is of', k)
-    k += 1
-    if k == 2:
-        break
-else:
-    print('K is not less than 3 anymore')
+def f(yushing3 = []):
+    yushing3.append('H')
+    yushing3.append('T')
+    print(yushing3)
+
+f()
+f()
+f()
+f()
